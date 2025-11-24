@@ -1,0 +1,36 @@
+
+pip install nltk
+
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+
+from nltk import word_tokenize, pos_tag, ne_chunk
+
+text = "Barack Obama was the 44th President of the United States."
+tokens = word_tokenize(text)
+tags = pos_tag(tokens)
+tree = ne_chunk(tags)
+print(tree)
+
+
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+
+text = "Apple Inc. is a technology company based in Cupertino, California."
+tokens = word_tokenize(text)
+pos_tags = pos_tag(tokens)
+
+
+text = "Barack Obama was the 44th President of the United States."
+tokens = word_tokenize(text)
+tags = pos_tag(tokens)
+chunked = ne_chunk(tags)
+
+print(chunked)
+print("POS tagged text:")
+print(pos_tags)
+print("text with named entities:")
+print(chunked)

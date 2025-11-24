@@ -1,0 +1,40 @@
+from collections import defaultdict
+import random
+
+def generate_ngrams(text, n):
+    words = text.split()
+    ngrams = [tuple(words[i:i+n]) for i in range(len(words)-n+1)]
+    return ngrams
+
+from collections import defaultdict
+def calculate_probability_matrix(ngrams):
+    counts = defaultdict(lambda: defaultdict(int))
+    for ngram in ngrams:
+        prefix = ngram[:-1]  # All words except last
+        suffix = ngram[-1]   # Last word
+        counts[prefix][suffix] += 1
+
+    probabilities = {}
+    for prefix, suffix_counts in counts.items():
+        total_count = sum(suffix_counts.values())
+        probabilities[prefix] = {suffix: count / total_count for suffix, count in suffix_counts.items()}
+
+    return probabilities
+
+def print_ngram_probability(ngrams, probabilities):
+    for ngram in ngrams:
+        prefix = ngram[:-1]
+        suffix = ngram[-1]
+        probability = probabilities[prefix][suffix]
+        print(f"{prefix} -> {suffix}: Probability = {probability:.4f}")
+
+text = input("Enter a sentence: ")
+n = 2
+ngrams = generate_ngrams(text, n)
+prob_matrix = calculate_probability_matrix(ngrams)
+print_ngram_probability(ngrams, prob_matrix)
+
+n = int(input("Enter the value of 'n' for n-grams (1 for unigram, 2 for bigram): "))
+ngrams = generate_ngrams(text, n)
+probabilities = calculate_probability_matrix(ngrams)
+print_ngram_probability(ngrams, probabilities)

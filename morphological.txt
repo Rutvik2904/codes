@@ -1,0 +1,48 @@
+pip install --upgrade numpy h5py
+pip install --upgrade --force-reinstall spacy
+!python -m spacy download en_core_web_sm
+import spacy
+nlp = spacy.load("en_core_web_sm")
+doc = nlp("Rohan is learning NLP with spaCy.")
+for token in doc:
+ print(token.text, token.pos_)
+
+import spacy
+nlp = spacy.load("en_core_web_sm")
+declarative_sentence = input("Enter a declarative sentence: ")
+print("You entered:", declarative_sentence)
+
+import spacy
+nlp = spacy.load("en_core_web_sm")
+interrogative_sentence = input("Enter an interrogative sentence: ")
+declarative_sentence = input("Enter a declarative sentence: ")
+complex_sentence = input("Enter a complex sentence: ")
+interrogative_doc = nlp(interrogative_sentence)
+declarative_doc = nlp(declarative_sentence)
+complex_doc = nlp(complex_sentence)
+print("\nInterrogative Sentence POS Tags:")
+for token in interrogative_doc:
+ print(f"{token.text}: {token.pos_}")
+print("\nDeclarative Sentence POS Tags:")
+for token in declarative_doc:
+ print(f"{token.text}: {token.pos_}")
+print("\nComplex Sentence POS Tags:")
+for token in complex_doc:
+ print(f"{token.text}: {token.pos_}")
+
+from tabulate import tabulate
+
+interrogative_table = tabulate(interrogative_pos, headers=table_headers, tablefmt="pretty")
+declarative_table = tabulate(declarative_pos, headers=table_headers, tablefmt="pretty")
+complex_table = tabulate(complex_pos, headers=table_headers, tablefmt="pretty")
+
+print("Interrogative Sentence POS Table:\n", interrogative_table)
+print("\nDeclarative Sentence POS Table:\n", declarative_table)
+print("\nComplex Sentence POS Table:\n", complex_table)
+
+print("Interrogative Sentence POS Tags:")
+print(interrogative_table)
+print("Declarative Sentence POS Tags:")
+print(declarative_table)
+print("Complex Sentence POS Tags:")
+print(complex_table
