@@ -9,3 +9,42 @@ doc = nlp(text)
 entities = [(ent.text, ent.label) for ent in doc.ents]
 print("Named Entities:")
 print(entities)
+
+
+Experiment No. 5
+
+Name Entity Recognition
+
+Aim:
+
+The aim of the Name Entity Recognition practical is to develop and implement a model that accurately identifies and classifies named entities in text, such as names of people, organizations,
+
+and locations.
+
+Lab Objectives:
+
+To create based on the NLP concept.
+
+Theory:
+
+Named Entity Recognition (NER) is a crucial task in Natural Language Processing (NLP) that involves identifying and classifying named entities in a text into predefined categories. Named entities refer to specific pieces of information within a text, such as names of people, locations, organizations, dates, and more. The primary goal of NER is to extract and categorize these entities accurately.
+
+Here's a detailed explanation of NER:
+
+1. Tokenization: The first step in NER is tokenization, where the input text is divided into individual tokens, usually words or subworlds. For example, the sentence" Barack Obama was born in Hawaii." would be tokenized into ["Barack", "Obama", "was", "born", "in", "Hawaii", "."].
+
+2. Part-of-Speech (POS) Tagging: Before performing NER, it's often beneficial to perform Part-of-Speech tagging. This assigns a grammatical label (e.g., noun, verb, adjective) to each token. For example, "Barack" and "Obama" would be tagged as proper nouns.
+
+3. NER Labeling: This is where the actual NER task happens. Each token is labeled with its corresponding entity category.
+
+Common categories include: PERSON: Names of people.
+
+LOCATION: Names of places or locations. ORGANIZATION: Names of companies, institutions, etc. DATE: Any sort of date or time reference.
+
+Lab Outcomes:
+
+Create based in the NLP concept.
+
+Conclusions:
+
+In summary, Named Entity Recognition (NER) is a fundamental aspect of natural language processing, facilitating the identification and classification of entities like people, organizations, locations, and dates in a text. Employing machine learning algorithms, NER is essential in practical applications such as information extraction, sentiment analysis, and question-answering systems. Its capacity to discern and categorize entities enhances language understanding, automates tasks involving unstructured text data, and significantly contributes to developing intelligent and context-
