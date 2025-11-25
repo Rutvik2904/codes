@@ -1,0 +1,64 @@
+Title: Data Storytelling
+
+Aim: 6.1 Create data story in Tableau - Overview of the Tableau ecosystem
+
+6.2 Design end-to-end dashboards with the help of storytelling
+
+Objective:
+
+To apply best practices in data storytelling and visualization to create informative and visually appealing content, and to study how to design end-to-end dashboards within Tableau, combining multiple data stories into a unified and interactive visualization platform.
+
+Theory 6.1
+
+Creating a data story in Tableau is a powerful method for effectively communicating data insights, patterns, and trends. It involves the combination of data visualizations, narratives. and interactivity to engage the audience and deliver a compelling message. Data storytelling is the art of presenting data in a way that captivates your audience, making it easy for them to understand and derive meaningful insights from the data. In Tableau, this involves several key steps:
+
+a. Data Preparation: Begin by loading your data into Tableau. Tableau can connect to various data sources, including databases, spreadsheets, and web data connectors. Ensure that your data is clean, well-structured, and relevant to the story you want to tell.
+
+b.Visadizations: Visualizations the building blacks of a data story. Tablanu offers a widezanpe of chart types, including bac charts, lae chara, scatter plots, maps, and more.
+
+Choose the appropriate
+
+visualization type for your data and the imights you want to convey
+
+c.Story Stractant: A data story should have a ciene and logical structure, just like any marrative. It typically consists of the following elements
+
+Introduction. Begin with tepduction that sets the contest for the story. What is the problem or question you're addressing with the data?
+
+Development: In this part, you prenem the data vinalizations and analyses that norwer the quntion or address the problem. You should guide the audience through the data, highlighting hey findings and maighos
+
+Cimax The climax of your data story is whure you present the most significant insights or findings. This is the "Aha!" momem that your audience shosdd reach
+
+Conclusion: Conclude your story by summarizing the key tahsways and implications. What action or decision should the audience sussider haard on the data prosenied"
+
+d. Interactivity Tabden allows you add interactivity to your data visualizations. This can include filters, parzeniem, actions, and tooltips. Interactivity makes your data story engaging and allows the audience to explore the data on their own.
+
+e. Annotations: Annotatiuns provide context and additional information to your visualizations They can be used to highlight specific data points or explain ommsu-fcrvations
+
+f.Consistency: Maintain a consistent style throughout your data story. Use a common polor palette, fants, and formatting in make your story visually appealing and easy to follow
+
+
+
+
+6.2
+
+Designing end-to-end dashboards with help of Storytelling is cracial aspects of data visualization in Tableaui these dashboards gerve as a compashensik platform for presenting a collection of data stories in an organized & interactive manner These dashboard can be used to present a range of insights & help the audience make informed decisions. Here are key
+
+a pashboard creation Stort by creating a new dash bourd coithin Tableau. You can do this by selecting Dashboard.
+
+bLayout Design Plan the layout of your dashboard. Decide how you want to arrange your data stories, visualizations, f any additional elements such astitles, Alters & explanatory text.
+
+C-Data Story Integration Incorporate your data stories. into dashboard. Each data story can be represented as a seperate dashboard object or a story point
+
+d.Interactivity Enhance the dashboard Interactivity.utilize filters, parameters faction to allow users to explore data.
+
+e.Consistency: Maintain a consistent design across all data Stories within your dashboard.
+
+f.Titles & Descriptions: Provide clear finformative titles. & description foreach Visualization.
+
+g.Apretations: use annotation to add context to ye Visualization fexplain significant trendy.
+
+h.history flow: Ensure a logical coherent flow ofd. Glories coithin dashboard.
+
+conclusion: Leveraging storytelling in Tableau for data visualization & dashboard design is powerful method for conveying data insights. facilitating informed decision making This approach integrates data visualization best prac with narrative storytelling. & informative con content. to create compeling and informative content
+
+
